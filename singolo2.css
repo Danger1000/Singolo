@@ -1,0 +1,227 @@
+@font-face {
+	font-family: "Light";
+	src: url("assets/fonts/Lato-Light.ttf");
+}
+@font-face {
+	font-family: "Regular";
+	src: url("assets/fonts/Lato-Regular.ttf");
+}
+@font-face {
+	font-family: "Bold";
+	src: url("assets/fonts/Lato-Bold.ttf");
+}
+@font-face {
+	font-family: "Black";
+	src: url("assets/fonts/Lato-Black.ttf");
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bold", "Tahoma", sans-serif;
+  font-size: 12px;
+}
+
+.covering {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.portfolio {
+  box-sizing: border-box;
+  height: 870px;
+  padding: 60px 40px 50px;
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+
+.section-header {
+  font-size: 30px;
+  font-family: "Black", sans-serif;
+  letter-spacing: -0.1px;
+  color: #666d89;
+  margin-left: 0.5px;
+}
+
+.section-description {
+  padding-top: 18px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+  font-family: "Light", sans-serif;
+  color: #767e9e;
+  text-align: justify;
+}
+
+.tag {
+  list-style: none;
+  padding: 11px 1px 19px;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 2px 6px 3px 6px;
+  font-family: "Regular", sans-serif;
+  color: #767e9e;
+  border: 1px solid #767e9e;
+  border-radius: 5px;
+}
+
+.tag-item:hover {
+  color: #646df0;
+  border-color: #646df0;
+  cursor: pointer;
+}
+
+.tag-item-active {
+  color: #dedede;
+  border-color: #c5c5c5;
+}
+
+.portfolio-img-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 940px;
+  height: 600px;
+  list-style: none;
+}
+
+.portfolio-img {
+  width: 219px;
+  height: 185px;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.portfolio-img:nth-child(n+13) {
+  display: none;
+}
+
+.about-us {
+  box-sizing: border-box;
+  height: 734px;
+  padding: 59px 40px 50px;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+}
+
+.about-us-description {
+  padding-bottom: 45px;
+  word-spacing: -0.px;
+}
+
+.about-us-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.about-us-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  width: 300px;
+  height: 443px;
+  list-style: none;
+}
+
+.about-us-item:nth-child(1) .person {
+  margin-top: 1px;
+  }
+
+.person2 {
+  margin-top: 1px;
+}
+
+.person3 {
+  margin-left: 1px;
+  margin-top: 1px;
+}
+
+.item-header {
+  margin: 6px 0 0 -1px;
+  font-size: 18px;
+  font-family: "Black", sans-serif;
+  color: #666d89;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-description {
+  line-height: 21px;
+  font-family: "Regular", sans-serif;
+  word-spacing: -0.2px;
+  color: #767e9e;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.item-description-1 {
+  line-height: 21px;
+  font-family: "Regular", sans-serif;
+  word-spacing: -0.5px;
+  color: #767e9e;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  width: 152px;
+}
+
+.about-us-item:nth-child(1) .contacts {
+  padding-left: 1px;
+}
+
+.pic {
+  border-radius: 50%;
+}
+
+.small-ico {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #666d89;
+  cursor: pointer;
+}
+
+.small-ico:hover {
+  border-color: #646df0;
+}
+
+.contacts .pic:nth-child(1) {
+  background: url(assets/facebook.svg) center no-repeat;
+}
+
+.contacts .pic:nth-child(1):hover {
+  background: url(assets/facebook_hover.svg) center no-repeat;
+}
+
+.contacts .pic:nth-child(2) {
+  background: url(assets/google.svg) center no-repeat;
+}
+
+.contacts .pic:nth-child(2):hover {
+  background: url(assets/google_hover.svg) center no-repeat;
+}
+
+.contacts .pic:nth-child(3) {
+  background: url(assets/twitter.svg) center no-repeat;
+}
+
+.contacts .pic:nth-child(3):hover {
+  background: url(assets/twitter_hover.svg) center no-repeat;
+}
+
+.contacts .pic:nth-child(4) {
+  background: url(assets/linkedin.svg) center no-repeat;
+}
+
+.contacts .pic:nth-child(4):hover {
+  background: url(assets/linkedin_hover.svg) center no-repeat
+}
