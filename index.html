@@ -8,34 +8,37 @@
   <body>
     <header class="header cover">
       <h1 class="ico">SINGOLO</h1>
-      <nav class="nav">
+      <nav class="navig">
         <ul>
-          <li class="navigation"><a class="active" href="#">home</a></li>
-          <li class="navigation"><a href="#">services</a></li>
-          <li class="navigation"><a href="#">portfolio</a></li>
-          <li class="navigation"><a href="#">about</a></li>
-          <li class="navigation"><a href="#">contact</a></li>
+          <li class="navigation"><a href="#home">home</a></li>
+          <li class="navigation"><a href="#services">services</a></li>
+          <li class="navigation"><a href="#portfolio">portfolio</a></li>
+          <li class="navigation"><a href="#about">about</a></li>
+          <li class="navigation"><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="slider cover">
-        <div class="slider">
-          <div class="slider-arrow"></div>
-          <div class="slider-arrow right"></div>
-        </div>
-        <div class="slide-control"><a class="slide-left" href="#"></a></div>
-        <div class="slider-block">
-          <div class="vertical-phone"></div>
-          <div class="horizontal-phone"></div>
-        </div>
-        <div class="slide-control"><a class="slide-right" href="#"></a></div> 
-      </div>
+      <section class="slider">
+				<button class="btn-slider" id="prevBtn"></button>
+				<div class="frame-slider">
+					<div class="slide slide1"  data-bg-color="#f06c64" data-border-color="#ea676b">
+						<div class="slide-subj slide-subj0"><img class="mobile-phone" src="assets/mobile.png" width="215" height="458" alt="cell phone"><div class="mobile-screen-on"></div></div>
+						<div class="slide-subj slide-subj0 slide-subj-90"><img class="mobile-phone" src="assets/mobile.png" width="215" height="458" alt="cell phone"><div class="mobile-screen-on"></div></div>
+					</div>
+					<div class="slide slide2" data-bg-color="#648bf0" data-border-color="#5e86f7">
+            <div class="slide-subj slide2-item"><img class="mobile-phone" src="assets/cell.svg" alt="cell phone"><div class="mobile-screen-on"></div></div>
+            <div class="slide-subj slide2__item_big"><img class="mobile-phone" src="assets/cell.svg" width="229" height="486" alt="cell phone"><div class="mobile-screen-on"></div></div>
+            <div class="slide-subj slide2-item"><img class="mobile-phone" src="assets/cell.svg" alt="cell phone"><div class="mobile-screen-on"></div></div>
+          </div>
+				</div>
+				<button class="btn-slider slider__button_next" id="nextBtn"></button>
+			</section>
     </main>
     <footer class="footer">
       <div class="cover">
         <div class="footer-top">
-          <div class="footer-title-header">Our Services</div>
+          <div class="footer-title-header" id="services">Our Services</div>
           <div class="footer-title-content">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
         </div>
         <div class="footer-insides">
@@ -86,7 +89,7 @@
     </footer>
     <div class="covering">
       <main>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <h2 class="section-header">Portfolio</h2>
           <p class="section-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           <ul class="tag">
@@ -110,7 +113,7 @@
             <li class="portfolio-img"><img src="assets/portfolio-12.png" ></li>
           </ul>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about">
           <h2 class="section-header">About Us</h2>
           <p class="section-description about-us-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <ul class="about-us-block">
@@ -149,12 +152,12 @@
             </li>
           </ul>
         </section>
-        <section class="contact-us">
+        <section class="contact-us" id="contact">
           <h2 class="section-headline">Get a Quote</h2>
           <p class="section-descriptions">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <div class="layout-2-col">
+          <div class="wrapper-3">
             <form class="contact-form" action="#" method="post">
-              <input class="contact-form-place" type="text" name="name" placeholder="Name (Required)" pattern="^[A-Z]{1}[a-z]{3,20}$" required>
+              <input class="contact-form-place" type="text" name="name" placeholder="Name (Required)" pattern="^[A-Z]{1}[a-z]{2,20}$" required>
               <input class="contact-form-place" type="email" name="email" placeholder="Email (Required)" required>
               <input class="contact-form-place" type="text" name="subject" placeholder="Subject">
               <textarea class="contact-form-area"name="comments" placeholder="Describe your project in detail..."></textarea>
@@ -182,6 +185,19 @@
           <a class="icon icon_small"></a>
         </div>
       </footer>
+    </div>
+    <template id="template">
+      <div class="wrap-2">
+        <div class="modal-window">
+          <h4 class="win-head">The letter was sent</h4>
+          <p class="win-subj">No subject</p>
+          <p><pre class="win-comm">No description</pre></p>
+            <button class="win-btn">OK </button>
+            </div>
+        </div>
+      </div>
+    </template>
+      <script src="script.js"></script>
     </div>
   </body>
 </html>
