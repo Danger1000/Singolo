@@ -8,53 +8,49 @@
   <body>
     <header class="header cover">
       <h1 class="ico">SINGOLO</h1>
-      <nav class="navig">
+      <nav class="navig" id="navv">
         <ul>
           <li class="navigation"><a href="#home">home</a></li>
           <li class="navigation"><a href="#services">services</a></li>
           <li class="navigation"><a href="#portfolio">portfolio</a></li>
           <li class="navigation"><a href="#about">about</a></li>
-          <li class="navigation"><a href="#contact">contact</a></li>
+          <li class="navigation"><a href="#contact" >contact</a></li>
         </ul>
       </nav>
-    </header>
+    </header> 
     <main>
-      <section class="slider">
-				<button class="btn-slider" id="prevBtn"></button>
-				<div class="frame-slider">
-					<div class="slide slide1"  data-bg-color="#f06c64" data-border-color="#ea676b">
-						<div class="slide-subj slide-subj0"><img class="mobile-phone" src="assets/mobile.png" width="215" height="458" alt="cell phone"><div class="mobile-screen-on"></div></div>
-						<div class="slide-subj slide-subj0 slide-subj-90"><img class="mobile-phone" src="assets/mobile.png" width="215" height="458" alt="cell phone"><div class="mobile-screen-on"></div></div>
-					</div>
-					<div class="slide slide2" data-bg-color="#648bf0" data-border-color="#5e86f7">
+      <section class="slider" id="home">
+	<button class="btn-slider" id="prevBtn"></button>
+	<div class="frame-slider">
+	  <div class="slide slide1"  data-bg-color="#f06c64" data-border-color="#ea676b">
+	  <div class="slide-subj slide-subj0"><img class="mobile-phone" src="assets/mobile.png" width="215" height="458" alt="cell phone"><div class="mobile-screen-on"></div></div>
+	  <div class="slide-subj slide-subj0 slide-subj-90"><img class="mobile-phone" src="assets/mobile.png" width="215" height="458" alt="cell phone"><div class="mobile-screen-on"></div></div>
+	</div>
+	<div class="slide slide2" data-bg-color="#648bf0" data-border-color="#5e86f7">
             <div class="slide-subj slide2-item"><img class="mobile-phone" src="assets/cell.svg" alt="cell phone"><div class="mobile-screen-on"></div></div>
             <div class="slide-subj slide2__item_big"><img class="mobile-phone" src="assets/cell.svg" width="229" height="486" alt="cell phone"><div class="mobile-screen-on"></div></div>
             <div class="slide-subj slide2-item"><img class="mobile-phone" src="assets/cell.svg" alt="cell phone"><div class="mobile-screen-on"></div></div>
           </div>
-				</div>
-				<button class="btn-slider slider__button_next" id="nextBtn"></button>
-			</section>
-    </main>
-    <footer class="footer">
-      <div class="cover">
-        <div class="footer-top">
-          <div class="footer-title-header" id="services">Our Services</div>
-          <div class="footer-title-content">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
-        </div>
-        <div class="footer-insides">
-          <div class="footer-unit">
-            <div class="block-pic block-pic-pen"></div>
-            <div class="block-description">
-              <div class="block-title">Custom design</div>
-              <div class="block-insides">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</div>
+	</div>
+	<button class="btn-slider slider__button_next" id="nextBtn"></button>
+      </section>
+      <section class="footer-title-header cover  footer" id="services">Our Services
+        <div class="footer-title-content">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
+          </div>
+          <div class="footer-insides">
+            <div class="footer-unit">
+              <div class="block-pic block-pic-pen"></div>
+              <div class="block-description">
+                <div class="block-title">Custom design</div>
+                <div class="block-insides">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</div>
+              </div>
             </div>
-          </div>
-          <div class="footer-unit">
-            <div class="block-pic block-pic-bulb"></div>
-            <div class="block-description">
-            <div class="block-title">Inovative ideas</div>
-            <div class="block-insides">Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</div>
-          </div>
+            <div class="footer-unit">
+              <div class="block-pic block-pic-bulb"></div>
+              <div class="block-description">
+              <div class="block-title">Inovative ideas</div>
+              <div class="block-insides">Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</div>
+           </div>
         </div>
         <div class="footer-unit">
           <div class="block-pic block-pic-heart"></div>
@@ -86,18 +82,16 @@
         </div>
       </div>  
     </div>
-    </footer>
-    <div class="covering">
-      <main>
-        <section class="portfolio" id="portfolio">
-          <h2 class="section-header">Portfolio</h2>
-          <p class="section-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-          <ul class="tag">
-            <li class="tag-item tag-item-active">All</li>
-            <li class="tag-item">Web Design</li>
-            <li class="tag-item">Graphic Design</li>
-            <li class="tag-item">Artwork</li>
-          </ul>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <h2 class="section-header">Portfolio</h2>
+    <p class="section-description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    <ul class="tag">
+      <li class="tag-item tag-item-active">All</li>
+      <li class="tag-item">Web Design</li>
+      <li class="tag-item">Graphic Design</li>
+      <li class="tag-item">Artwork</li>
+    </ul>
           <ul class="portfolio-img-block">
             <li class="portfolio-img"><img src="assets/portfolio-1.png" ></li>
             <li class="portfolio-img"><img src="assets/portfolio-2.png" ></li>
