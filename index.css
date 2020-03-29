@@ -587,16 +587,16 @@ header {
 }
 
 .icon-facebook {
-    background-image: url(./assets/facebook.svg); 
+    background: url(./assets/Facebook.svg) center no-repeat; 
 }
 .icon-gplus {
-    background-image: url(./assets/Google.svg); 
+    background: url(./assets/Google.svg) center no-repeat; 
 }
 .icon-twitter {
-    background-image: url(./assets/Twitter.svg); 
+    background: url(./assets/Twitter.svg) center no-repeat; 
 }
 .icon-linkedin {
-    background-image: url(./assets/LinkedIn.svg); 
+    background: url(./assets/LinkedIn.svg) center no-repeat; 
 }
 
 
@@ -616,6 +616,8 @@ header {
 
 
 .icon a {
+    border: 1px solid #011256;
+    border-radius: 50%;
     position: absolute;
     cursor: pointer;
     height: inherit;
