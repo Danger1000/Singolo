@@ -26,16 +26,18 @@ body {
 }
  
 .cover {
-  padding: 0 40px;
+  padding: 0px 40px;
 }
   
 .header {
+  width: 940px;
   display: flex;
   align-items: center;
   height: 89px;
   background-color: #2d303a;
   color: white;
   border-bottom: 6px solid #323746;
+  z-index: 10;
 }
   
 h1.ico {
@@ -69,7 +71,10 @@ h1.ico::after {
   padding-top: 10px;
   font-size: 12px;
 }
-  
+
+.nav-active {
+  color: rgb(182, 31, 31);
+}
 .nav .navigation > a {
   color: white;
   text-decoration: none;
@@ -97,19 +102,30 @@ h1.ico::after {
 	cursor: default;
 }
   
+.burger-menu {
+  display: none;
+}
+
+.burger-item {       
+  width: 25px;
+  height: 2.4px;
+  background: #F6F6F7;
+  border-radius: 5px;
+  margin: 6.4px;
+}
+
 .slider-block {
   position: relative;
   width: 100%;
 }
   
-
 .slider {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	height: 600px;
-	padding: 0px 39px 5px 42px;
+	height: 570px;
+	padding: 10px 39px 15px 42px;
   border-bottom: 6px solid;
   transition: all 1s;
 }
@@ -133,7 +149,7 @@ h1.ico::after {
 	position: absolute;
 	top: 0%;
 	right: 75%;
-	width: 16px;
+	width: 17px;
 	height: 27px;
 	background: url(assets/arrow-left.svg) center no-repeat;
 }
@@ -182,7 +198,7 @@ h1.ico::after {
 }
 
 .slide-subj-90 {
-  width: calc(18% + 22rem);
+  width: calc(18% + 18.3rem);
 }
 
 .slide-subj .mobile-screen-on {
@@ -262,20 +278,11 @@ h1.ico::after {
 }
 
   
-.footer {
-  height: calc(500px - 6px);
-  background-color: #f2f2f2;
-  border-bottom: 6px solid white;
-}
-  
+
   .footer-unit {
     display: grid;
     height: 125px;
     grid-template-columns: 70px 240px;
-  }
-  
-  .footer-top {
-    height: 215px;
   }
   
   .footer-insides {
@@ -283,7 +290,13 @@ h1.ico::after {
     grid-template-columns: repeat(3, 320px);
     grid-template-rows: repeat(2, 123px);
   }
-  
+ 
+  .footer {
+    height: calc(434px - 6px);
+    background-color: #f2f2f2;
+    border-bottom: 6px solid white;
+  }
+
   .footer-title-header {
     padding-top: 68px;
     font-weight: 900;
@@ -317,9 +330,10 @@ h1.ico::after {
   
   .block-description {
     flex-direction: column;
-    padding: 0 10px 25px;
+    padding: 45px 10px 25px;
   }
-  
+
+
   .block-insides {
     padding: 7px 0;
     font-weight: 900;
@@ -334,7 +348,7 @@ h1.ico::after {
   .block-pic {
     display: block;
     height: 55px;
-    margin: 5px 11px 0 1px;
+    margin: 45px 11px 0 1px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -562,6 +576,10 @@ h1.ico::after {
   
   .contacts .pic:nth-child(1) {
     background: url(assets/facebook.svg) center no-repeat;
+  }
+
+  .nav-active {
+    color: rgb(182, 31, 31);
   }
   
   .contacts .pic:nth-child(1):hover {
