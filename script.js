@@ -1,3 +1,33 @@
+function scroll(event) {
+  let curPosition = window.scrollY;
+  if (curPosition > 120) {
+    document.querySelector('header').style.position= 'fixed';
+  }else document.querySelector('header').style.position= 'relative';
+  document.querySelectorAll('main > section').forEach((item) => {
+      item.getAttribute('id');
+      if (item.offsetTop <= curPosition && (item.offsetTop + item.offsetHeight)> curPosition) {
+        document.querySelectorAll('nav a').forEach((a) =>{
+          a.style.color='';
+          if (item.getAttribute('id') === a.getAttribute('href').substr(1)) {
+            a.style.color='#f06c64';
+          }
+        })
+      }
+  });
+
+}
+document.addEventListener('scroll', scroll);
+
+const navbarItemActive  = (event) =>{
+  document.querySelectorAll('.navigation').forEach(item => item.style.color='');
+  event.preventDefault();
+   let id = event.target.getAttribute('href').substr(1);
+   document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+}
+document.querySelector('.navig').addEventListener('click' ,navbarItemActive);
 
 const SLIDER_FRAME = document.querySelector('.frame-slider');
 const SLIDER_SECTION = document.querySelector('.slider');
@@ -94,20 +124,6 @@ const LOGO = document.querySelector('.ico');
 const HEADER_NAV = document.querySelector('.navig ul');
 const NAV_ITEMS = [...HEADER_NAV.querySelectorAll('li')];
 
-NAV_ITEMS.forEach(item => {
-  if(item.children[0].getAttribute('href') == LOC_HASH) item.classList.add('navigation-current');
-});
-
-LOGO.addEventListener('click', () => {
-  NAV_ITEMS.forEach(item => item.classList.remove('navigation-current'));
-  NAV_ITEMS[0].classList.add('navigation-current');
-});
-
-HEADER_NAV.addEventListener('click', (e) => {
-  NAV_ITEMS.forEach(item => item.classList.remove('navigation-current'));
-  e.target.closest('li').classList.add('navigation-current');
-});
-
 const TAGS_MENU = document.querySelector('.tag');
 const TAGS = [...TAGS_MENU.querySelectorAll('.tag-item')];
 const GALLERY = document.querySelector('.portfolio .portfolio-img-block');
@@ -147,5 +163,3 @@ function removeModal (e) {
   e.target.closest('.wrap-2').remove();
   FORM.reset();
 }
-
-
